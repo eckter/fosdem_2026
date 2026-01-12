@@ -1,5 +1,3 @@
-
-
 \documentclass{bredelebeamer}
 
 \usepackage{minted}
@@ -9,8 +7,7 @@
 
 
 
-
-\title[Train planning in OSRD]{Automated short-term train planning in OSRD}
+\title[Train planning in OSRD]{Automated short-term train planning in OSRD: from POC to production}
 
 \subtitle{}
 
@@ -20,17 +17,12 @@
 
 \date{}
 
-\subject{STDCM}
-
-
-
-
+\subject{Train planning in OSRD}
 
 
 
 
 \begin{document}
-
 
 
 \begin{frame}
@@ -40,115 +32,46 @@
 
 
 
-
-
-
-
 \section{Problem presentation}
 
-\begin{frame}{Problem presentation}
-\begin{block}{}
-A train wants to go from Station A to Station B.
-\end{block}
+	\begin{frame}{Problem presentation}
+		\begin{itemize}
+			\item Search for some room for a new train
+			\item Detours, slowdowns, and extra stops are allowed
+		\end{itemize}
+	\end{frame}
 
-\vspace{1cm}
-\includesvg[width=\textwidth]{img/svg/examples/1}
-% Schema d'une petite infra
-\end{frame}
+\section{Our solution: general principles}
 
-
-\begin{frame}{Problem presentation}
-
-\begin{block}{}
-But many trains have already been scheduled,
-finding some room won't be easy.
-\end{block}
-
-\vspace{1cm}
-\includesvg[width=\textwidth]{img/svg/examples/2}
-% Même schéma avec des trains en plus
-
-\end{frame}
+	\begin{frame}{Our solution: general principles}
+		\begin{itemize}
+			\item Decision tree
+			\item Searching in space and time
+		\end{itemize}
+	\end{frame}
 
 
-\begin{frame}{}
-\begin{block}{}
-A new train can't be delayed by other trains.
-\end{block}
+\section{New issues, new solutions}
+	\begin{frame}{New issues, new solutions}
+		\begin{itemize}
+			\item Computation times
+			\item Data issues
+			\item Problem space and output visualization
+			\item Adding extra stops
+		\end{itemize}
+	\end{frame}
 
+\section{Conclusion}
+	\begin{frame}{Questions}
+		\Large Any question?
+		\normalsize
 
-\vspace{1cm}
-\includesvg[width=\textwidth]{img/svg/examples/3}
-% Schéma avec un avertissement
+		\vspace{2cm}
 
-\end{frame}
-
-
-\begin{frame}{}
-
-\begin{block}{}
-A new train can't delay other trains.
-\end{block}
-
-% Schéma avec un avertissement pour un autre train
-
-\vspace{1cm}
-\includesvg[width=\textwidth]{img/svg/examples/4}
-\end{frame}
-
-
-
-\begin{frame}{}
-\begin{block}{}
-All the intricacies of signaling systems need to be handled.
-\end{block}
-
-% Conflit d'itinéraire
-\vspace{1cm}
-\includesvg[width=\textwidth]{img/svg/examples/5}
-
-\end{frame}
-
-\begin{frame}{}
-
-\begin{block}{}
-It can be necessary to know where the train will go next.
-\end{block}
-
-\vspace{1cm}
-\includesvg[width=\textwidth]{img/svg/examples/6}
-% Problème du lookahead
-
-\end{frame}
-
-
-\begin{frame}{}
-
-\begin{block}{}
-A new train \textbf{can} take detours and not always go
-at maximum speed.
-\end{block}
-
-% Exemple d'un détour
-
-\vspace{1cm}
-\includesvg[width=\textwidth]{img/svg/examples/7}
-\end{frame}
-
-
-
-
-
-\begin{frame}{Questions}
-    \Large Any question?
-    \normalsize
-
-    \vspace{2cm}
-
-    For more information: \url{osrd.fr}\\
-    Github link: \url{github.com/DGEXSolutions/osrd}\\
-    Chat with us: \url{https://web.libera.chat/\#osrd}\\
-    Email: \url{contact@osrd.fr}
-\end{frame}
+		For more information: \url{osrd.fr}\\
+		Github link: \url{https://github.com/OpenRailAssociation/osrd}\\
+		Chat with us: \url{https://matrix.osrd.fr}\\
+		Email: \url{contact@osrd.fr}
+	\end{frame}
 
 \end{document}
