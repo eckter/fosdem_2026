@@ -76,7 +76,7 @@
 	\end{frame}
 	
 
-\section{Our solution: the original POC}
+\section{The original POC}
 
 	\begin{frame}{Our solution: general principles}
 		
@@ -90,7 +90,7 @@
 	
 	\begin{frame}{Our solution: general principles}
 		
-		Then on top of each path, we evaluate another decision tree with the time:\\
+		Then on top of each path, we evaluate another decision tree along the time axis:\\
 		
 		
 		\includesvg[width=\textwidth]{img/svg/examples/space-time-chart-decision-tree}
@@ -104,29 +104,51 @@
 
 
 \section{Deployment and new challenges}
+
 	\begin{frame}{How the new tool fits in the existing processes}
 		\begin{block}{}
-			People are in charge of answering such requests: timetable planners. The goal is not to replace them but to work with them.
+				People are in charge of answering such requests: timetable planners
 		\end{block}
-		TODO: schematic of users / planners / OSRD interactions
+		
+		\includegraphics[scale=0.40]{img/png/interactions.png}
+		
 	\end{frame}
-
-	\begin{frame}{What this implies}
+	
+	\begin{frame}{Early 2025 : real data and first users}
 		\begin{itemize}
-			\item OSRD is used as a pre-filtering tool
-			\item \textbf{False negatives} end up being more of a concern than false positives
-			\item Timetable planners check the outputs carefully: any data issue is clearly visible
+			\item First requirement: data
+			\item We first focused on specific axis
+			
+			
+			\includesvg[height=150px]{img/svg/examples/perimeter}
 		\end{itemize}
 	\end{frame}
 	
-	% If there's extra time:
-	% talk about performance issues (heuristic, how to define redundant paths)
-	% How to log, visualize, and trust the output
-	% Feedbacks from timetable planners: data issues and such
+	\begin{frame}{Early 2025 : real data and first users}
+		We had our first feedback!
+		\begin{itemize}
+			\item Too much false negative
+			\item Data issues, with \textbf{specific} cases
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{2025 : Dealing with that feedback}
+		TODO
+	\end{frame}
+
 
 
 
 \section{Conclusion}
+
+	\begin{frame}{What we've learned}
+		\begin{itemize}
+			\item The technical approach is sound, and could work on different infrastructures
+			\item The hard part is the data quality, not just the algorithm
+			\item There's a lot of people we need to convince
+			\item We're always looking for collaborators, feedback, or other infrastructure managers interested in trying this
+		\end{itemize}
+	\end{frame}
 	\begin{frame}{Questions}
 		\Large Any question?
 		\normalsize
