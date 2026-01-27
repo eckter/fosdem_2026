@@ -22,7 +22,7 @@
 \begin{frame}{OSRD (Open-Source Railway Designer)}
 	\begin{itemize}
 		\item OSRD is an open-source project that can be used to \textbf{edit railway infrastructures} and \textbf{run simulations}.
-		\item We'll talk about one of its many features:\\ train planning
+		\item We'll talk about one of its many features:\\ \textbf{train planning}.
 	\end{itemize}
 	\begin{center}
 		\includesvg[height=30px]{img/svg/logos/osrd_small}
@@ -38,7 +38,7 @@
 	\begin{frame}{Problem presentation}
 		\begin{block}{}
 			A train wants to go from Station A to Station B, leaving tomorrow.
-			We're the railway operator and need to find a way.
+			We're the railway infrastructure manager and need to find a way.
 		\end{block}
 		\vspace{1cm}
 		\includesvg[width=\textwidth]{img/svg/examples/1}
@@ -84,8 +84,8 @@
 			We evaluate one big \textbf{decision tree}:\\
 			we enumerate all possible solutions and run a pathfinding algorithm on that tree (A*).
 		\end{block}
-		First on space:\\
-		TODO: screenshot of an infra, may be schematic
+		
+		\includesvg[width=200px]{img/svg/examples/infra-decision-tree}
 	\end{frame}
 	
 	\begin{frame}{Our solution: general principles}
