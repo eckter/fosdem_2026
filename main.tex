@@ -117,30 +117,36 @@
 	\begin{frame}{Early 2025 : real data and first users}
 		\begin{itemize}
 			\item First requirement: data
-			\item We first focused on specific axis
+			\item We first focused on a specific axis
 			
 			
 			\includesvg[height=150px]{img/svg/examples/perimeter}
 		\end{itemize}
 	\end{frame}
 	
-	\begin{frame}{Early 2025 : real data and first users}
-		We had our first feedback!
+	\begin{frame}{Early 2025 : first users and feedback}
 		\begin{itemize}
-			\item Too much false negative
-			\item Data issues, with \textbf{specific} cases
+			\item First feedback from the new users!
+			\item They want to use it as an optimistic \textbf{pre-filtering} check: "is there a chance my request would be accepted?"
+			\item ...But we were on the pessimistic side.
+			\item We then rushed some new features to fix that (e.g. adding extra stops).
 		\end{itemize}
 	\end{frame}
 	
-	\begin{frame}{2025 : Dealing with that feedback}
-		TODO
+	
+	\begin{frame}{2025 : feedback from timetable planners}
+		\begin{itemize}
+			\item They had data issue with \textit{specific} examples.
+			\item We had to work on our logging and context saving.
+			\item They don't focus on the same kind of data!
+			\item Sometimes explaining \textbf{why} our solution was wrong could be difficult.
+		\end{itemize}
 	\end{frame}
 
 
 
 
 \section{Conclusion}
-
 	\begin{frame}{What we've learned}
 		\begin{itemize}
 			\item The technical approach is sound, and could work on different infrastructures
