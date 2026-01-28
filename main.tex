@@ -46,7 +46,8 @@
 	
 	\begin{frame}{Problem presentation}
 		\begin{block}{}
-			But many trains have already been scheduled!
+			But many trains have already been scheduled!\\
+			(10k to 15k per day)
 		\end{block}
 		\vspace{1cm}
 		\includesvg[width=\textwidth]{img/svg/examples/2}
@@ -63,7 +64,7 @@
 			\item Add \textbf{detours}
 			\item Slow down the new train
 			\item Change the departure time
-			\item Add stops, lengthen planned stops
+			\item Add or lengthen stops
 		\end{itemize}
 	\end{frame}
 	
@@ -162,6 +163,7 @@
 				\item \textbf{6\%} false negatives
 				\item All of the identified errors come from data issues
 			\end{itemize}
+			\item Computation time per request: from 200ms to 3 minutes, 16s average
 		\end{itemize}
 	\end{frame}
 
@@ -176,6 +178,7 @@
 			\item There's a lot of people we need to convince
 		\end{itemize}
 		\begin{block}{}
+			It can work on any infrastructure as long as there's data.\\
 			We're always looking for collaborators, feedback, or other infrastructure managers interested in trying this
 		\end{block}
 	\end{frame}
