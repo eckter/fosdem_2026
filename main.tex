@@ -90,16 +90,24 @@
 	
 	\begin{frame}{Our solution: general principles}
 		
-		Then on top of each path, we evaluate another decision tree along the time axis:\\
+		\begin{block}{}
+			Then on top of each path, we evaluate another decision tree along the time axis:
+		\end{block}
 		
-		
-		\includesvg[width=\textwidth]{img/svg/examples/space-time-chart-decision-tree}
+		\includesvg[width=250px]{img/svg/examples/space-time-chart-decision-tree}
 	\end{frame}
 
 
 \section{Short demo}
 	\begin{frame}{Short demo}
-		% Recorded demo here: it shows the paths being explored on the map, and a resulting space time chart
+		\begin{block}{}
+			(recorded demo here: it shows the paths being explored on the map, and a resulting space time chart)\\
+			
+			link to mkv file: \url{https://github.com/eckter/fosdem\_2026/blob/master/short\_demo.mkv}\\
+			
+			TODO: remove this text
+		\end{block}
+
 	\end{frame}
 
 
@@ -142,6 +150,20 @@
 			\item Sometimes explaining \textbf{why} our solution was wrong could be difficult.
 		\end{itemize}
 	\end{frame}
+	
+		
+	\begin{frame}{Some numbers}
+		\begin{itemize}
+			\item We receive 10 to 20 requests per day
+			\item Only a few are actually forwarded to timetable planners with the PDF file (1-2 per week)
+			\item Out of those:
+			\begin{itemize}
+				\item \textbf{13\%} false positive
+				\item \textbf{19\%} false negatives
+				\item All of the identified errors come from data issues
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
 
 
 
@@ -149,11 +171,13 @@
 \section{Conclusion}
 	\begin{frame}{What we've learned}
 		\begin{itemize}
-			\item The technical approach is sound, and could work on different infrastructures
+			\item The technical approach is sound
 			\item The hard part is the data quality, not just the algorithm
 			\item There's a lot of people we need to convince
-			\item We're always looking for collaborators, feedback, or other infrastructure managers interested in trying this
 		\end{itemize}
+		\begin{block}{}
+			We're always looking for collaborators, feedback, or other infrastructure managers interested in trying this
+		\end{block}
 	\end{frame}
 	\begin{frame}{Questions}
 		\Large Any question?
