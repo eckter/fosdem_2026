@@ -15,7 +15,11 @@
 \begin{document}
 
 \begin{frame}
-  \titlepage
+	\titlepage
+	\vspace{-1cm}
+	\begin{center}
+		{\textit{\footnotesize FOSDEM 2026\\Railways and Open Transport}}
+	\end{center}
 \end{frame}
 
 
@@ -25,8 +29,9 @@
 		\item We'll talk about one of its many features:\\ \textbf{train planning}.
 	\end{itemize}
 	\begin{center}
-		\includesvg[height=30px]{img/svg/logos/osrd_small}
-		\includesvg[height=40px]{img/svg/logos/sncf-reseau}
+		$\vcenter{\hbox{\includesvg[height=30px]{img/svg/logos/osrd_small}}}$
+		\hspace{0.5cm}
+		$\vcenter{\hbox{\includesvg[height=20px]{img/svg/logos/sncf-reseau}}}$
 		\vspace{0.5cm}\\
 		\includesvg[height=30px]{img/svg/logos/rust}
 		\includesvg[height=30px]{img/svg/logos/kotlin}
@@ -103,13 +108,10 @@
 \section{Short demo}
 	\begin{frame}{Short demo}
 		\begin{block}{}
-			(recorded demo here: it shows the paths being explored on the map, and a resulting space time chart)\\
-			
-			link to mkv file: \url{https://github.com/eckter/fosdem\_2026/blob/master/short\_demo.mkv}\\
-			
-			TODO: remove this text
+		Video available in the GitHub repo
+		
+		{\scriptsize \url{https://github.com/eckter/fosdem_2026/blob/master/short_demo.mkv}}
 		\end{block}
-
 	\end{frame}
 
 
@@ -117,7 +119,7 @@
 
 	\begin{frame}{How the new tool fits in the existing processes}
 		\begin{block}{}
-				People are in charge of answering such requests: timetable planners
+			People are already in charge of answering such requests: timetable planners
 		\end{block}
 		
 		\includegraphics[scale=0.40]{img/png/interactions.png}
@@ -127,7 +129,6 @@
 		\begin{itemize}
 			\item First requirement: data
 			\item We first focused on a specific axis
-			
 			
 			\includesvg[height=150px]{img/svg/examples/perimeter}
 		\end{itemize}
@@ -145,7 +146,7 @@
 	
 	\begin{frame}{2025 : feedback from timetable planners}
 		\begin{itemize}
-			\item They had data issue with \textit{specific} examples.
+			\item Timetable planners noticed data issue with \textit{specific} examples.
 			\item We had to work on our logging and context saving.
 			\item They don't focus on the same kind of data!
 			\item Sometimes explaining \textbf{why} our solution was wrong could be difficult.
@@ -189,7 +190,7 @@
 		\vspace{2cm}
 
 		For more information: \url{https://osrd.fr}\\
-		Github: \url{https://github.com/OpenRailAssociation/osrd}\\
+		Github: {\footnotesize \url{https://github.com/OpenRailAssociation/osrd}}\\
 		Chat with us: \url{https://matrix.osrd.fr}\\
 		Email: \url{contact@osrd.fr}
 	\end{frame}
